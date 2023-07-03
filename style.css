@@ -27,6 +27,7 @@
 }
 
 body {
+    height: 100vh;
     background-image: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
@@ -39,9 +40,9 @@ body {
 
 #container {
     width: 36rem;
-    margin: 0 auto;
+    margin: 5.6rem auto 0;
 
-    padding-top: 0 2.4rem
+    padding-top: 0 2.4rem;
 }
 
 /* PROFILE */
@@ -53,6 +54,8 @@ body {
 
 #profile img {
     width: 11.2rem;
+    border-radius: 50%;
+    border: 5px solid var(--surface-color)
 }
 
 #profile p {
@@ -141,7 +144,7 @@ ul li a {
 
 ul li a:hover {
     background: var(--surface-color-hover);
-    border: 1.5px solid ;
+    border: 1.5px solid var(--text-color);
 }
 
 /* SOCIAL LINKS */
@@ -182,5 +185,17 @@ footer {
 
 footer a {
     color: var(--text-color);
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
 
