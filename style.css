@@ -156,6 +156,12 @@ ul li a:hover {
 
 /* SOCIAL LINKS */
 
+p {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
 #social-links {
     display: flex;
     justify-content: center;
