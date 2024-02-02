@@ -8,7 +8,7 @@
     font-size: 62.5%;
 
     --text-color: #ffffff;
-    --bg-url: url(./assets/Bg-mobile\ \(1\).jpg);
+    --bg-url: url(./assets/Background\ Desktop\ .jpg);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05); 
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -18,7 +18,7 @@
 
 .light {
     --text-color: #000000;
-    --bg-url: url(./assets/Bg-mobile-light\ \(1\).jpg);
+    --bg-url: url(./assets/Background\ Desktop\ Light.jpg);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05); 
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -27,11 +27,12 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background-image: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    background-attachment: fixed;
 
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
@@ -55,6 +56,8 @@ body {
 }
 
 #profile img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
     width: 11.2rem;
     border-radius: 50%;
     border: 5px solid var(--surface-color)
@@ -204,11 +207,11 @@ footer a {
 
 @media (min-width: 700px) {
     :root {
-        --bg-url: url(./assets/Bg-desktok.jpg);
+        --bg-url: url(./assets/Background\ Desktop\ .jpg);
     }
 
     .light {
-        --bg-url: url(./assets/Bg-desktok-light.jpg);
+        --bg-url: url(./assets/Background\ Desktop\ Light.jpg);
     }
 
 
