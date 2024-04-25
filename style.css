@@ -116,6 +116,7 @@ body {
 .light #switch button {
     animation: slide-in 400ms forwards;
 }
+
 #switch button:hover {
     outline: 8px solid var(--highlight-color);
 }
